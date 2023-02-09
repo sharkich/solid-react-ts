@@ -1,7 +1,10 @@
 import { ReportHandler } from 'web-vitals';
 
+// eslint-disable-next-line @typescript-eslint/ban-types
+const isFunction = (value: unknown): value is Function => value instanceof Function;
+
 const reportWebVitals = (onPerfEntry?: ReportHandler) => {
-  if (onPerfEntry && onPerfEntry instanceof Function) {
+  if (onPerfEntry && isFunction(onPerfEntry)) {
     import('web-vitals').then(({ getCLS, getFID, getFCP, getLCP, getTTFB }) => {
       getCLS(onPerfEntry);
       getFID(onPerfEntry);
@@ -12,4 +15,5 @@ const reportWebVitals = (onPerfEntry?: ReportHandler) => {
   }
 };
 
+// eslint-disable-next-line import/no-default-export
 export default reportWebVitals;
