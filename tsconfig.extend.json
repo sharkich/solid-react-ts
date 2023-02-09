@@ -2,16 +2,16 @@
   "compilerOptions": {
     "baseUrl": "./src",
     "paths": {
-      "@/components": ["./components"],
-      "@/components/*": ["./components/*"],
-      "@/modules": ["./modules"],
-      "@/modules/*": ["./modules/*"],
-      "@/services": ["./services"],
-      "@/services/*": ["./services/*"],
-      "@/pages": ["./pages"],
-      "@/pages/*": ["./pages/*"],
-      "@/config": ["./config"],
-      "@/config/*": ["./config/*"]
+      "@/components": ["./X./components"],
+      "@/components/*": ["./X./components/*"],
+      "@/modules": ["./X./modules"],
+      "@/modules/*": ["./X./modules/*"],
+      "@/services": ["./X./services"],
+      "@/services/*": ["./X./services/*"],
+      "@/pages": ["./X./pages"],
+      "@/pages/*": ["./X./pages/*"],
+      "@/config": ["./X./config"],
+      "@/config/*": ["./X./config/*"]
     }
   }
 }
