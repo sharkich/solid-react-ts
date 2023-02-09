@@ -1,16 +1,6 @@
 {
+  "extends": "./tsconfig.extend.json",
   "compilerOptions": {
-    "baseUrl": "./src",
-    "paths": {
-      "@/components": ["components"],
-      "@/components/*": ["components/*"],
-      "@/modules/*": ["modules/*"],
-      "@/services/*": ["services/*"],
-      "@/pages/*": ["pages/*"],
-      "@/config/*": ["config/*"],
-      "@/config": ["config"]
-    },
-
     "target": "es5",
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
@@ -31,6 +21,6 @@
     "downlevelIteration": true,
     "experimentalDecorators": true
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": ["**/*.ts", "**/*.tsx"],
   "exclude": ["node_modules"]
 }
